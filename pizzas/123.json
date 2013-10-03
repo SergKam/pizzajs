@@ -1,0 +1,22 @@
+{
+    "id": 123,
+    "name": "Pepperony",
+    "img": "pep.png",
+    "ingredients": "red sauce, mozzarella cheese, tomato, oregano",
+    "desc": "Truly Italian recipe. A pleasant combination of tomato sauce and mozzarella tender. red sauce, mozzarella cheese, tomato, oregano",
+    "price": 11,
+    "options":[
+        {
+            "name": "Cheese",
+            "price": 1
+        },
+        {
+            "name": "Mushrooms",
+            "price": 2
+        },
+        {
+            "name": "Hum",
+            "price": 3
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 123,
+        "name": "Pepperony",
+        "img": "pep.png",
+        "desc": "Truly Italian recipe. A pleasant combination of tomato sauce and mozzarella tender.",
+        "price": 11
+    },
+    {
+        "id": 124,
+        "name": "Mozzarella",
+        "img": "moc.png",
+        "desc": "Mozzarella is delicious combination of tomato sauce and mozzarella ",
+        "price": 12
+    },
+    {
+        "id": 125,
+        "name": "DeepSea",
+        "img": "sea.png",
+        "desc": "Cream sauce, mozzarella, shrimp, squid, mussels, black and green olives, spices, lemon juice",
+        "price": 12
+    },
+
+    {
+        "id": 126,
+        "name": "Chilly",
+        "img": "chill.png",
+        "desc": "Chile sauce, marinated beef, marinated cherry tomatoes, pickled hot pepper, mozzarella cheese, garlic sauce",
+        "price": 15
+    },
+    {
+        "id": 127,
+        "name": "Milano",
+        "img": "milano.png",
+        "desc": "Tomato sauce, mozzarella, chicken, ham, tomato, sweet pepper, garlic sauce, spices",
+        "price": 18
+    }
+]

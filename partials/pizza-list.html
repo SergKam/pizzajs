@@ -1,0 +1,22 @@
+<div class="filter">
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="price">Price</option>
+      </select>
+
+</div>
+<div>
+  <!--Body content-->
+  <ul class="pizzas">
+    <li ng-repeat="pizza in pizzas | filter:query | orderBy:orderProp" class="thumbnail">
+      <a href="#/pizza/{{pizza.id}}">
+      <div class="title" >{{pizza.name}}</div><br>
+      <div class="thumb"><img ng-src="img/pizzas/{{pizza.img}}"></div>
+      <div class="desc">{{pizza.desc}}</div>
+      <div class="price">{{pizza.price| currency}}</div>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+{
+        "id": 126,
+        "name": "Chilly",
+        "img": "chill.png",
+        "desc": "Chile sauce, marinated beef, marinated cherry tomatoes, pickled hot pepper, mozzarella cheese, garlic sauce",
+        "price": 15,
+        "options":[
+        {
+            "name": "mozzarella",
+            "price": 2
+        },
+        {
+            "name": "garlic sauce",
+            "price": 3
+        }]
+}

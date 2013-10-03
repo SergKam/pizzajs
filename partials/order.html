@@ -1,0 +1,15 @@
+
+<div class='orders' ng-controller="OrderCtrl">
+    Your order: {{message}}
+    <div ng-repeat="orderItem in order.orderList">
+        <div>
+            {{orderItem.summ|currency}} = {{orderItem.quantity}} x {{orderItem.pizza.name}}
+            <span ng-show='orderItem.options.length'>+<span>
+            <span ng-repeat="option in orderItem.options">{{option}}, </span>
+        </div>
+    </div>
+
+    <span class='total' ng-show="order.total" >Total: {{order.total|currency}}</span><br>
+    <button class="back" onclick="location = '#/pizzas';"><< Back to pizzas list</button>
+    <button class='action' ng-show="order.total" ng-click="pay()">Pay</button>
+</div>

@@ -1,0 +1,15 @@
+{
+    "id": 124,
+    "name": "Mozzarella",
+    "img": "moc.png",
+    "ingredients": "red sauce, mozzarella cheese, tomato, oregano",
+    "desc": "Truly Italian recipe. A pleasant combination of tomato sauce and mozzarella tender.",
+    "price": 12,
+    "options":[
+        {
+            "name": "mozzarella",
+            "price": 2
+        }
+
+    ]
+}

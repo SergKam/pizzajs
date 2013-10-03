@@ -1,0 +1,16 @@
+<div class='info'>
+    <div class="pizza">
+      <div class="title" >{{pizza.name}}</div><br>
+      <div class="thumb"><img ng-src="img/pizzas/{{pizza.img}}"></div>
+      <div class="desc">{{pizza.desc}}</div>
+      <div class="price">Base price: {{pizza.price|currency}}</div>
+    </div>
+      <div class="options">
+          <label ng-repeat="opt in pizza.options"><input type="checkbox" ng-model="opt.value" ng-click="recalc()">Add more {{opt.name}} +{{opt.price|currency}}<br></label>
+      </div>
+    <div class="full"> The complete pizza price is: {{pizza.full|currency}}</div>
+
+    <label class="quantity">How many pizzas do you want? :<input  type='number' min="1" max="20" integer name="quantity" ng-model="quantity" ng-change="recalc()"></label>
+    <button class="back" onclick="location = '#/pizzas';"><< Back to pizzas list</button>
+    <button class="add action" ng-click="add()">Add to order {{order|currency}}</button>
+</div>

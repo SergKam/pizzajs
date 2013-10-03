@@ -1,0 +1,17 @@
+{
+
+        "id": 127,
+        "name": "Milano",
+        "img": "milano.png",
+        "desc": "Tomato sauce, mozzarella, chicken, ham, tomato, sweet pepper, garlic sauce, spices",
+        "price": 18,
+        "options":[
+        {
+            "name": "mozzarella",
+            "price": 2
+        },
+        {
+            "name": "garlic sauce",
+            "price": 3
+        }]
+}

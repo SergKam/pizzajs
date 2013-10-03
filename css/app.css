@@ -1,0 +1,227 @@
+/* app css stylesheet */
+
+body {
+    background:grey url('../img/back.gif') repeat fixed;
+    font: italic bold 1em Georgia, serif;
+    height: 100%;
+    z-index: 1;
+    text-shadow: 1px 1px 3px white;
+}
+
+button, input, select {
+    padding: 5px 20px;
+    border-radius: 1em;
+    box-shadow: inset 2px 2px 5px white;
+}
+
+
+.header {
+    font-size: 2em;
+    color: saddlebrown;
+    background: rgba(185, 147, 25, 0.36);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+button.order {
+    width: 10em;
+    font-size: 0.8em;
+    background: greenyellow;
+    text-shadow: 1px 1px 3px white;
+    border-radius: 1em;
+    box-shadow: inset 2px 2px 5px white;
+}
+
+.action {
+    width: 13em;
+    font-size: 1.6em;
+    background: orangered;
+    text-shadow: 1px 1px 3px white;
+    border-radius: 1em;
+    box-shadow: inset 2px 2px 5px white;
+}
+
+
+.filter {
+    position: fixed;
+    top: 17px;
+    right: 10px;
+    z-index: 100;
+    /*background: grey url('../img/back.gif') repeat fixed;*/
+}
+
+/* Pizass list screen*/
+
+.pizzas {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.pizzas a {
+    text-decoration: none;
+}
+
+.pizzas li {
+    background-color: rgba(240, 248, 255, 0.56);
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background: aliceblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px wheat;
+    transition: 0.3s ease-in-out all;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    color: indigo;
+    background-color: rgba(112, 180, 66, 0.61);
+}
+
+.pizzas li:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    box-shadow: 0px 0px 30px white;
+    z-index: 10;
+}
+
+.pizzas li img {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transition: 0.5s ease-in-out all;
+}
+
+.pizzas li:hover img {
+    height: 220px;
+    width: 220px;
+    z-index: 10;
+}
+
+.title {
+    background: gold;
+    color: black;
+    font: italic bold 2em Georgia, serif;
+    padding: 0.2em;
+    border-radius: 1em;
+    box-shadow: 0 0 5px black;
+    opacity: 0.9;
+    position: relative;
+    padding-left: 1em;
+}
+
+.pizzas .desc {
+    padding: 10px;
+    margin: 10px;
+    height: 70px;
+    position: relative;
+    top:-150px;
+    left: 150px;
+    width: 200px;
+    background: cornsilk;
+    border-radius: 3px;
+    box-shadow: 0 0 5px gray;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    transition: 0.7s ease-in-out all;
+    opacity: 0.9;
+}
+.pizzas li:hover .desc {
+    top: -260px;
+    left: 120px;
+}
+.pizzas .price {
+    font-size: 2em;
+    position: relative;
+    top:-158px;
+    left: 150px;
+    transition: 0.3s ease-in-out all;
+    color: brown;
+}
+.pizzas li:hover .price {
+    top:-330px;
+    left: 20px;
+}
+
+/* Pizass details screen*/
+.info .pizza {
+    transition: 0.3s ease-in-out all;
+    width: 800px;
+    padding-left: 50px;
+}
+.info .thumb img {
+    position: relative;
+    top: -50px;
+    left: 20px;
+
+}
+
+.info .desc {
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    height: 90px;
+    background: rgba(255, 248, 220, 0.64);
+    border-radius: 3px;
+    box-shadow: 0 0 5px gray;
+    position: relative;
+    top: -250px;
+    left: 250px;
+}
+.info .price {
+    width:200px;
+    position: relative;
+    top: -250px;
+    left: 300px;
+    color: brown;
+    font-size: 1.5em;
+}
+
+.info .options {
+    position: relative;
+    top: -250px;
+    left: 300px;
+    font-size: 1.3em;
+    width: 50%;
+}
+.info .full {
+    position: relative;
+    top: -250px;
+    left: 300px;
+    width: 20em;
+    color: brown;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.info .quantity {
+    position: relative;
+    top: -260px;
+    left: 300px;
+}
+.info .quantity input {
+    width: 3em;
+}
+.info .add {
+    position: relative;
+    top: -200px;
+    left: -200px;
+}
+
+.info .back {
+    position: relative;
+    top: -202px;
+    left: -300px;
+}
+
+/*Order screen*/
+.total {
+    font-size: 2em;
+}

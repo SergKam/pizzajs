@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The best pizzas in the world!</title>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+</head>
+<body  ng-app="pizzaShop">
+    <div class="header">
+            <span ng-controller="ShoppingCartCtrl">
+                <span ng-show="order.count">
+                    Your order {{order.count}} pizza(s), Total {{order.total|currency}} <a href="#/order"><button class="order">Let's Order!</button></a>
+                </span>
+                <span ng-show="!order.count">Please, choose some pizza!</span>
+            </span>
+
+    </div>
+    <div class="content" ng-view>Loading...</div>
+</body>
+</html>
